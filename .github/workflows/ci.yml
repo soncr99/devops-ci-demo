@@ -1,0 +1,17 @@
+name: CI Demo
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v3
+
+    - name: Run CI step
+      run: echo "🎉 CI is running successfully!"
+
